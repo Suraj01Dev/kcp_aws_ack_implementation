@@ -1,0 +1,5 @@
+apiVersion: apis.kcp.io/v1alpha1
+kind: APIExport
+metadata:
+  name: s3.services.k8s.aws
+spec:

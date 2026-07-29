@@ -1,0 +1,11 @@
+apiVersion: syncagent.kcp.io/v1alpha1
+kind: PublishedResource
+metadata:
+  name: publish-s3-bucket
+spec:
+  resource:
+    apiGroup: s3.services.k8s.aws
+    version: v1alpha1
+    kind: Bucket
+  naming:
+    namespace: "kcp-sync"

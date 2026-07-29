@@ -1,0 +1,15 @@
+apiVersion: s3.services.k8s.aws/v1alpha1
+kind: Bucket
+metadata:
+  name: team-a-data
+  namespace: default
+spec:
+  name: team-a-data-kcp-demo-983215
+  versioning:
+    status: Enabled
+  tagging:
+    tagSet:
+      - key: managed-by
+        value: kcp-syncagent
+      - key: team
+        value: team-a
